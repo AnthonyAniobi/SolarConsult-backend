@@ -20,7 +20,7 @@ function App() {
   const [healthLabel, setHealthLabel] = useState(healthOptions[0]);
   const [recipes, setRecipes] = useState([]);
 
-  let YOUR_APP_KEY: string;//"615ec659220c9191b68e363c8615cc3c";
+  let YOUR_APP_KEY: string;
   let YOUR_APP_ID: string;
   const url: string = `https://api.edamam.com/search?q=${query}&app_id=${YOUR_APP_ID}&app_key=${YOUR_APP_KEY}&health=${healthLabel}`;
 
@@ -40,7 +40,6 @@ function App() {
     fetch(process.env.APP_KEY).then((key: string) => {
       YOUR_APP_KEY = key;
     });
-
   }, []);
 
   return (
