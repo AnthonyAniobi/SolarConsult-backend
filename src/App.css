@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 40px 23px;
+  border-top: 15px solid pink;
+}
+
+.app__searchForm {
+  margin-top: 17px;
+}
+
+.app__input {
+  padding: 6px 16px;
+  min-width: 200px;
+  max-width: 100vw;
+  border-radius: 15px;
+  font-size: 17px;
+}
+
+.app__submit {
+  padding: 6px 16px;
+  border: 2px solid green;
+  background-color: green;
   color: white;
+  font-size: 15px;
+  border-radius: 15px;
+  margin-left: 6px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.app__submit:hover {
+  border: 2px solid green;
+  background-color: white;
+  color: green;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app__healthLabels {
+  padding: 7px 8px;
+  margin-left: 6px;
+  border-radius: 14px;
+  font-size: 15px;
+}
+
+.recipeList {
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: 220px 220px 220px;
 }
