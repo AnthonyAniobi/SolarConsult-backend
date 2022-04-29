@@ -22,3 +22,19 @@ The project is hosted on ... checkout the current state of the app
 
 ### Screenshots
 ![Home Page](screenshots/intercontinentalRecipe.png)
+
+
+### Setting Up
+To have this project up and running on your machine you would have to set the environment vaiables. You can do this by following the process below
+1. Sign up at [Edemam](www.edemam.com)
+2. Get your app id and api key
+3. clone a local copy of this project on your machine
+4. run `npm install` to get all modules
+5. Create a `.env` file in the root directory
+6. Add your app id and api key in the `.env` file as shown below:
+    ```
+    REACT_APP_APP_KEY = "615ec659220c9191b68e363c8615cc3c"
+    REACT_APP_APP_ID = "6e031aee"
+    ```
+7. Start the project using `npm start`
+8. You can now search for recipes from all arround the world
