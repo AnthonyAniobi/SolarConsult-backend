@@ -3,7 +3,7 @@
 This project helps you find recipes for foods from several parts of the world. You specify your taste both in type and health requirements and the food is provided with the recipe.
 The project is based on the [edemon](www.edemam.com) api.
 
-The project is hosted on ... checkout the current state of the app
+The project is hosted [here checkout the current state of the app](https://intercontinental-recipes.web.app/)
 
 ### How to use
 - Open the website
