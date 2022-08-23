@@ -36,6 +36,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     #third party apps
     'whitenoise.runserver_nostatic',
+    # application
+    'consult.apps.ConsultConfig',
+    
 ]
 
 MIDDLEWARE = [
