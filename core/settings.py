@@ -36,9 +36,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     #third party apps
     'whitenoise.runserver_nostatic',
+    'rest_framework',
+    'rest_framework.authtoken',
     # application
     'consult.apps.ConsultConfig',
-    
+    'api.apps.ApiConfig',
 ]
 
 MIDDLEWARE = [
@@ -131,3 +133,13 @@ STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES' :[
+        'rest_framework.permissions.AllowAny',
+    ],
+    'DEFUALT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
+    ]
+}
