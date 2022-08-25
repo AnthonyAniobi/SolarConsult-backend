@@ -34,10 +34,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
     #third party apps
     'whitenoise.runserver_nostatic',
     'rest_framework',
     'rest_framework.authtoken',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'rest_auth',
+    'rest_auth.registration',
     # application
     'consult.apps.ConsultConfig',
     'api.apps.ApiConfig',
@@ -143,3 +149,7 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.TokenAuthentication',
     ]
 }
+
+# console email backend
+EMAIL_BACKEND='django.core.mail.backends.console.EmailBackend'
+SITE_ID=1
