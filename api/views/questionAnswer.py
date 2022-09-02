@@ -10,6 +10,7 @@ class QuestionAnswerView(APIView):
         answers = []
         for answer in answerModel:
             answers.append({
+                'id': answer.id,
                 'answer': answer.answer,
                 'votes': answer.votes,
                 'user': answer.user.id,

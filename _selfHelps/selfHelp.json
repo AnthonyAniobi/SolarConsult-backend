@@ -1,0 +1,32 @@
+{
+    "1":{
+        "title": "Solar panel",
+        "subtitle": "How solar panel works",
+        "category": "Solar Panel",
+        "text": "some long description" 
+    },
+    "2":{
+        "title": "Solar panel",
+        "subtitle": "How solar panel works",
+        "category": "Charge Controller",
+        "text": "some long description" 
+    },
+    "3":{
+        "title": "Solar panel",
+        "subtitle": "How solar panel works",
+        "category": "Solar Panel",
+        "text": "some long description"
+    },
+    "4":{
+        "title": "Solar panel",
+        "subtitle": "How solar panel works",
+        "category": "Solar Panel",
+        "text": "some long description" 
+    },
+    "5":{
+        "title": "Solar panel",
+        "subtitle": "How solar panel works",
+        "category": "Battery",
+        "text": "some long description"
+    }
+}
