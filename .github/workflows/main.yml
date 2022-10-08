@@ -1,9 +1,13 @@
 name: 'build pipeline for portfolio python'
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version of application'
+  # push:
+  #   branches:
+  #     - main
 
 jobs:
   build:
