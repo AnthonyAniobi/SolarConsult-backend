@@ -3,5 +3,8 @@
 The backend for the solar consult application
 
 ## Features
-- [ ] Build Api for calculation 
-- [ ] Raise 
+- [ ] Dockerize the application
+- [ ] Deploy container to aws
+- [ ] setup lambda functions for script
+- [ ] Build Api for calculating sizing under the different categories
+- [ ] Setup endpoints
