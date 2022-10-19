@@ -1,4 +1,4 @@
-name: 'build pipeline for portfolio python'
+name: 'Publish to Container Registry'
 
 on:
   workflow_dispatch:
@@ -9,7 +9,7 @@ on:
     branches:
       - main
     path:
-      - 'version_code'
+      - '_versions'
 
 jobs:
   build:
